@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Homework Project</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<script >
+
+    date1.min = new Date().toISOString().split("T")[0];
+    const picker = document.getElementById('date1');
+    picker.addEventListener('input', function(e) {
+    var day = new Date(this.value).getUTCDay();
+
+    if([6,0].includes(day)) 
+    {
+        e.preventDefault();
+        this.value = '';
+        alert("We are not working at weekends.");
+        }
+    });
+
+    function Myfuct(id) 
+    {
+        document.getElementById(id).style.background = "";
+        document.getElementById(id).style.fontStyle = "oblique";
+        document.getElementById(id).style.color = "black";
+    }
+
+    function MyFunc2(id)
+    {
+        document.getElementById(id).style.background = "#bfff00";
+        document.getElementById(id).style.fontStyle = "oblique";
+        document.getElementById(id).style.color = "crimson";
+    }
+
+</script>
+
+<hr noshade>
+    <header>
+        <img src="images/logoCliniqueOscar.jpg" id="img1" alt="logoCliniqueOscar">
+
+        <div class="cont2">
+            <div class="first">CERTIFICATION</div>
+            <div class="ad"></div>
+            <div class="first">PRENEZ RENDES-VOUS</div>
+        </div>
+
+    </header>
+
+    <aside>
+        <div class="into">Réservez une consultation ostéopathique</div>
+    </aside>
+
+    <main>
+        Chaque consultation dure environ 45 minutes.
+
+        <ul>
+            <li>15  &euro; pour les enfants,les étudients et les tarifs réduits</li>
+            <li>20  &euro; pour le tarif adulte</li>
+            <li>60  &euro; pour 6 séances</li>
+        </ul>
+
+        En clinique les soins sont dispénses par nos étudiants encadrés pas des <span>enseignant ostéopathes professionnels.</span>
+
+        <br><br>Merci de renseigner les champs ci-dessous.<br><br>
+
+        <form action="sendData.php" method="get">
+            <table>
+                <tr>
+                    <td>Nom</td>
+                    <td>
+                        <input type="text" placeholder="" required="required" name="surname" onfocus="MyFunc2(this.id)" onblur="Myfuct(this.id)" id="f6">
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>Prénom </td>
+                    <td>
+                        <input type="text" placeholder="" required="required" name="name" id="f7" onfocus="MyFunc2(this.id)" onblur="Myfuct(this.id)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Téléphone</td>
+
+                    <td>
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(xxx)-(xx)-(xxx)" name="tel" id="f8" onfocus="MyFunc2(this.id)" onblur="Myfuct(this.id)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Courriel</td>
+                    <td>
+                        <input type="email" placeholder="" required="required" id="f1" name="email" onfocus="MyFunc2(this.id)" onblur="Myfuct(this.id)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Data RDV</td>
+                    <td>
+                        <input type="date" id="date1" required="required" name="date" onfocus="MyFunc2(this.id)" onblur="Myfuct(this.id)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Heure RDV</td>  
+
+                    <td><select name="heure" id="f9" onfocus="MyFunc2(this.id)" onblur="Myfuct(this.id)">
+                        <option> --Choix-- </option>
+                        <option>9 am</option>
+                        <option>10 am</option>
+                        <option>11 am</option>
+                        <option>12 am</option>
+                        <option>1 pm</option>
+                        <option>2 pm</option>
+                        <option>3 pm</option>
+                        <option>4 pm</option>
+                        <option>5 pm</option>
+
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td>Tarif</td>
+                    <td><select name="Tarif" id="f10" onfocus="MyFunc2(this.id)" onblur="Myfuct(this.id)">
+                        <option>--Choix--</option>
+                        <option>15 &euro; pour les enfants</option>
+                        <option>20 &euro; pour le tarif adulte</option>
+                        <option>60 &euro; pour 6 séances</option>
+                    </select></td>
+                </tr>
+            </table>
+
+            <br><input type="checkbox" required="required" id="f4">
+                J'autorise la Clinique Oscar à utiliser mes coordonnées uniquement pour me contacter et gérer mon rendez-vous.<br>
+            <input type="submit" id="f5" value="Prendre RDV">
+
+        </form>
+    </main>
+
+    <footer>
+        <img src="images/logoEcoleOscar.jpg" alt="logoEcoleOscar">
+
+        <div class="tx">
+            ECOLE OSCAR<br>
+            <br>Campus Prive d'Aisase<br>
+            24a Rue des Magasins - 67000 Strasburg
+            <br>Tel: +33 (0)3 88 23 14 14 - info@ecoleoscar.com
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+@media screen and (min-width:400px) {
+    hr {
+        display: none;
+    }
+
+    body {
+        width: 400px;
+        margin: 20px auto;
+    }
+
+    #img1 {
+        display: block;
+        width: 400px;
+    }
+
+    header .cont2 {
+        display: block;
+        width: 397px;
+        height: 163px;
+    }
+
+    header .ad {
+        background: url(../images/sante.jpg);
+        width: 267px;
+        height: 111px;
+        margin: 0 auto;
+
+    }
+
+    header .cont2 .first 
+    {
+        background: rgb(8, 187, 157);
+        width: 397px;
+        height: 26px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+        line-height: 26px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+    aside {
+        margin: 180px auto 0 auto;
+        width: 400px;
+        height: 120px;
+        background: url(../images/osteoRDV400x120.jpg);
+    }
+
+    .into {
+        height: 80px;
+        background: rgb(250, 249, 249);
+        opacity: 70%;
+        width: 400px;
+        color: rgb(5, 116, 150);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        line-height: 40px;
+        margin-top: -170px;
+        display: block;
+        
+    }
+    main {
+        margin: 0 auto 0 auto;
+        padding: 30px;
+        width: 340px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        background: rgb(248, 246, 246);
+    }
+
+    input { 
+        width: 100px;
+        border: 1px grey solid;
+    }
+
+    #f1 {
+        width: 180px;
+    }
+
+    #date1 {
+        width: 120px;
+    }
+    #f3 {
+        width: 70px;
+    }
+
+    #f4 {
+        width: 25px;
+        height: 25px;
+        outline: none;
+        border: 2px black solid;
+        cursor: pointer;
+    }
+
+    #f5 {
+
+        margin: 10px 0 0 0 ;
+        width: 100px;
+        border-radius: 4px;
+        background: rgb(6, 161, 123);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    select {
+        width: 220px;
+    }
+
+    footer {
+        width: 400px;
+        height: 350px;
+        margin: 0 auto;
+        background: rgb(46, 46, 61);
+    }
+    footer img {
+        width: 300px;
+        display: block;
+        margin: 0 0 0 50px;
+        float: left;
+    }
+    .tx{
+        float: left;
+        margin: 30px 0 0 30px;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 12px;
+        height: 210px;
+        line-height:20px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    hr 
+    {   width: 1200px;
+        color: rgb(207, 207, 207);
+        margin: 5px 0 0 -200px;
+        opacity:20%;
+        display: block;
+    }
+
+    body{width: 800px;
+        margin: 20px auto;
+        margin: 5px auto;
+    }
+    #img1 {
+        display: inline-block;
+        width: 368px;
+        margin: 0 30px 0 0;
+    }
+
+    header .cont2 {
+        display: inline-block;
+        width: 397px;
+        height: 163px;
+    }
+
+    header .ad {
+        background: url(../images/sante.jpg);
+        width: 267px;
+        height: 111px;
+        margin: 0 auto;
+    }
+
+    header .cont2 .first{
+        background: rgb(8, 187, 157);
+        width: 397px;
+        height: 26px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+        line-height: 26px;
+    }
+
+    span
+    {
+        font-weight: bold;
+    }
+
+    aside {
+        margin: 180px auto 0 auto;
+        width: 800px;
+        height: 168px;
+        background: url(../images/osteoRDV800x168.jpg);
+    }
+
+    .into 
+    {
+        height: 40px;
+        background: rgb(250, 249, 249);
+        opacity: 70%;
+        width: 800px;
+        color: rgb(5, 116, 150);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        text-align: center;
+        line-height: 40px;
+        margin-top: -170px;
+        display: block;
+        
+    }
+
+    main {
+        margin: 0 auto 0 auto;
+        padding: 30px;
+        width: 740px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        background: rgb(248, 246, 246);
+    }
+
+    input {
+        width: 100px;
+        border: 1px grey solid;
+    }
+
+    #f1 {
+        width: 180px;
+    }
+
+    #f2 {
+        width: 120px;
+    }
+
+    #f3
+    {
+        width: 70px;
+    }
+    #f4 {
+        width: 25px;
+        height: 25px;
+        outline: none;
+        border: 2px black solid;
+        cursor: pointer;
+    }
+
+    #f5 {
+        margin: 10px 0 0 0 ;
+        width: 100px;
+        border-radius: 4px;
+        background: rgb(6, 161, 123);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    select {
+        width: 220px;
+    }
+
+    footer {
+        width:800px;
+        height: 210px;
+        margin: 0 auto;
+        background: rgb(46, 46, 61);
+    }
+
+    footer img {
+        display: block;
+        margin: 0 0 0 30px;
+        float: left;
+    }
+
+    .tx{
+        float: left;
+        margin: 30px 0 0 80px;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 12px;
+        height: 210px;
+        line-height: 20px;
+    }
+}
+
+table input
+{
+    outline: none;
+    display: block;
+    color: black;
+    font-weight: bold;
+}
